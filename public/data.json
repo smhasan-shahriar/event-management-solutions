@@ -1,0 +1,80 @@
+[
+    {
+      "id": 1,
+      "name": "Weddings",
+      "image_url": "https://example.com/wedding.jpg",
+      "price": "$2000",
+      "short_description": "Elegant wedding planning and coordination",
+      "description": "Our wedding planning services are designed to make your special day stress-free and unforgettable. With over a decade of experience in the industry, we understand that weddings are a once-in-a-lifetime event, and we're dedicated to turning your dreams into reality. From selecting the perfect venue to coordinating every detail, including floral arrangements, catering, and entertainment, we've got you covered. Our team of talented professionals is passionate about creating unique and personalized weddings that reflect your style and personality. We offer customized packages to suit your budget and preferences, ensuring that your wedding day is everything you've ever imagined.",
+      "experiences": [
+        "Over 10 years of experience in planning and executing weddings",
+        "A team of talented professionals dedicated to your vision",
+        "Customized packages to suit your budget and preferences"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Birthday Parties",
+      "image_url": "https://example.com/birthday.jpg",
+      "price": "$500",
+      "short_description": "Fun and memorable birthday celebrations",
+      "description": "When it comes to birthday parties, we're the experts in creating fun and memorable celebrations. With a portfolio of hundreds of successful events, we have the experience to make your loved one's birthday truly special. Our creative themes, personalized party ideas, and skilled entertainers guarantee a magical experience for everyone. We handle all the logistics, from venue selection and decoration to catering and entertainment, so you can relax and enjoy the day with your guests. Whether you're planning a children's party or an adult celebration, we have the expertise to bring your vision to life and make it an unforgettable birthday bash.",
+      "experiences": [
+        "Hundreds of successful birthday parties organized",
+        "Creative themes and personalized party ideas",
+        "Skilled entertainers and decorators for a magical experience"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fundraising Gala",
+      "image_url": "https://example.com/anniversary.jpg",
+      "price": "$800",
+      "short_description": "Prestigious fundraising events for noble causes",
+      "description": "Our Fundraising Gala is an exquisite evening of elegance, purpose, and philanthropy. It's a grand celebration of generosity, where we unite individuals, businesses, and organizations for a noble cause. This prestigious event serves as a powerful platform to raise vital funds in support of meaningful initiatives that make a difference in our world. Picture a lavish cocktail reception, where guests mingle and share their passion for giving back. The gala dinner, a culinary masterpiece, is a feast for the senses. Live entertainment captivates hearts, and impactful presentations shed light on the transformative work being done. Guests, adorned in their finest attire, come not only to enjoy the glamour but also to contribute meaningfully to the cause. As seasoned event organizers, we understand that a Fundraising Gala is more than just an event; it's a catalyst for positive change. We specialize in crafting the perfect atmosphere, engaging donors effectively, and orchestrating successful fundraising activities. Together, we create a legacy of compassion and support that leaves a lasting mark on society. Join us in making the world a better place, one gala at a time.",
+      "experiences": [
+        "Strategic planning for impactful fundraising initiatives",
+        "Elegant event design and donor engagement",
+        "Successful auction management and compelling presentations"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Engagement Parties",
+      "image_url": "https://example.com/engagement.jpg",
+      "price": "$600",
+      "short_description": "Create beautiful memories of your engagement",
+      "description": "Your engagement is a momentous occasion, and we're here to help you celebrate it in style. Our event planning expertise ensures that your engagement party is a memorable and joyous occasion to share with family and friends. We understand that this is the beginning of a beautiful journey, and we'll create an event that reflects your love story. With years of experience in organizing engagement parties with a personal touch, we offer creative engagement party ideas and themes that resonate with you. Our professional coordination and vendor management ensure a stress-free planning process, allowing you to focus on the excitement of your upcoming union.",
+      "experiences": [
+        "Expertise in organizing engagement parties with a personal touch",
+        "Creative engagement party ideas and themes",
+        "Professional coordination and vendor management"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Retirement Parties",
+      "image_url": "https://example.com/retirement.jpg",
+      "price": "$400",
+      "short_description": "Honor the retiree with a fantastic farewell",
+      "description": "Saying goodbye to a colleague or loved one's working years deserves a fantastic farewell, and we specialize in planning retirement parties that honor the retiree's accomplishments. Whether it's a small gathering or a grand celebration, we'll tailor the event to provide a meaningful send-off. With creative ideas for retirement party themes and activities, we ensure that the retiree feels cherished and valued. Our experienced team has organized retirement events of all sizes, and we'll handle every aspect, from venue selection to decoration and entertainment. Let us help you create a memorable retirement party that expresses gratitude and marks the beginning of a new chapter.",
+      "experiences": [
+        "Tailored retirement party planning for a meaningful send-off",
+        "Creative ideas for retirement party themes and activities",
+        "Experienced in organizing retirement events of all sizes"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Baby Shower",
+      "image_url": "https://example.com/babyshower.jpg",
+      "price": "$300",
+      "short_description": "Adorable baby shower celebrations",
+      "description": "Welcoming a new life into the world is a joyous occasion, and our baby shower planning services are designed to make it even more special. With years of experience in planning delightful baby showers, we understand the importance of creating a heartwarming event that celebrates the parents-to-be and their little one on the way. Our themed baby shower décor and party favors add a charming touch to the celebration, making it truly memorable. We offer customized baby shower packages to fit your preferences, whether you prefer a traditional gathering or a more modern, unique experience. Let us take care of the details, so you can focus on sharing the excitement of the new addition to your family.",
+      "experiences": [
+        "Years of experience in planning delightful baby showers",
+        "Themed baby shower décor and party favors",
+        "Customized baby shower packages to fit your preferences"
+      ]
+    }
+  ]
