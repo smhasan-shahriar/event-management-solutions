@@ -6,6 +6,8 @@ import About from '../pages/About';
 import Services from '../pages/Services';
 import Experiences from '../pages/Experiences';
 import GetSupport from '../pages/GetSupport';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
 
 const Routes = createBrowserRouter([
     {
@@ -31,6 +33,14 @@ const Routes = createBrowserRouter([
             {
                 path: "/support",
                 element: <GetSupport></GetSupport>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/register",
+                element: <Register></Register>
             }
         ]
     }

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../Authentication/MainAuth';
+import useAuthHook from '../hooks/useAuthHook';
 
 const Services = () => {
+    const {user} = useAuthHook()
     return (
         <div>
-            services
+            services {user}
         </div>
     );
 };
