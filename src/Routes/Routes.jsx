@@ -8,11 +8,13 @@ import Experiences from '../pages/Experiences';
 import GetSupport from '../pages/GetSupport';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import ErrorPage from '../pages/ErrorPage';
 
 const Routes = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",

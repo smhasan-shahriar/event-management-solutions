@@ -1,7 +1,15 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuthHook from '../hooks/useAuthHook';
 
 const NavBar = () => {
+  const {user, logOut} = useAuthHook();
+  const handleLogOut = () => {
+    logOut()
+    .then()
+    .catch()
+  }
+
     const navLinks = <>
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/about">About Us</NavLink></li>
@@ -34,7 +42,16 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to="/login" className="btn">Log In</Link>
+    {
+      user ? <>
+          <div className='flex items-center gap-5'>
+            <img className="w-10 h-10 object-cover rounded-full" src={user.photoURL} />
+            <Link onClick={handleLogOut} className="btn capitalize">Log Out</Link>
+          </div>
+      
+      </>  :  <Link to="/login" className="btn">Log In</Link>
+    }
+   
   </div>
 </div>
         </div>
