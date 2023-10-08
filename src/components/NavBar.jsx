@@ -14,6 +14,7 @@ const NavBar = () => {
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/experiences">Customer Experiences</NavLink></li>
     <li><NavLink to="/support">Get Support</NavLink></li>
+    {!user && <li><NavLink to="/register">Register</NavLink></li>}
     </>
     return (
         <div className=' bg-red-100'>

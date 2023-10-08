@@ -6,6 +6,7 @@ import OurServices from '../components/OurServices';
 import CustomerReview from '../components/CustomerReview';
 import Questions from '../components/Questions';
 import Footer from '../components/Footer';
+import { ToastContainer } from 'react-toastify';
 
 const Home = () => {
     useEffect(() => {
@@ -19,11 +20,11 @@ const Home = () => {
       });
     return (
         <div>
+          <ToastContainer/>
             <BannerIntro ></BannerIntro>
             <OurServices></OurServices>
             <CustomerReview></CustomerReview>
             <Questions></Questions>
-            <Footer></Footer>
           
         </div>
     );

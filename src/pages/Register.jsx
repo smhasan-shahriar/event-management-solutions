@@ -12,8 +12,10 @@ const Register = () => {
   const handleSocialLogin = () => {
     signInSocial()
     .then((result)=> {
-      toast('You have successfully logged in');
-      navigate("/")
+      toast('You have successfully registered with Google')
+        setTimeout(function() {
+          navigate(location?.state ? location.state : "/");
+        }, 3000);
     })
     .catch(error => {
       toast(error.message)
@@ -28,10 +30,12 @@ const Register = () => {
     const password = form.get('password')
     if (password.length <6){
       toast('password must contain at least 6 characters')
+      e.target.reset()
       return;
     }
     if(!(/^(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).+$/).test(password)){
       toast('Password must contain at least one capital letter and a special character');
+      e.target.reset()
       return;
     }
     signUp(email, password)
@@ -40,17 +44,21 @@ const Register = () => {
       manageProfile(name, image_url)
       .then(()=> {
         toast('You have successfully registered with necessary info')
-        navigate("/")
+        setTimeout(function() {
+          navigate(location?.state ? location.state : "/");
+        }, 3000);
       })
       .catch(error => {
         toast(error.message)
       })
+      e.target.reset()
       
     }
      
     )
     .catch(error => {
       toast(error.message)
+      e.target.reset()
      
     })
   }
@@ -126,7 +134,7 @@ const Register = () => {
                 </Link>
               </p>
             </form>
-            <ToastContainer />
+            <ToastContainer autoClose={3500}/>
             <button onClick={handleSocialLogin}  className="capitalize btn btn-outline relative bottom-8 mx-20 text-blue-600">
               Register with <FaGoogle />
             </button>

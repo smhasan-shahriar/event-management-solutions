@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FaEye,FaEyeSlash, FaGoogle  } from "react-icons/fa";
 import useAuthHook from "../hooks/useAuthHook";
 
+
 const Login = () => {
   const {user, signIn, signInSocial} = useAuthHook();
   const [showPassword, setShowPassword]= useState(false);
@@ -13,8 +14,11 @@ const Login = () => {
   const handleSocialLogin = () => {
     signInSocial()
     .then(()=> {
-      toast('You have successfully logged in')
-      navigate(location?.state ? location.state : "/")
+      toast('You have successfully logged in.')
+      setTimeout(function() {
+        navigate(location?.state ? location.state : "/");
+      }, 3000);
+      
     })
     .catch(error => {
       toast(error.message)
@@ -27,24 +31,31 @@ const Login = () => {
     const password = form.get('password')
     if (password.length <6){
       toast('password must contain at least 6 characters')
+      e.target.reset()
       return;
     }
     if(!(/^(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).+$/).test(password)){
       toast('Password must contain at least one capital letter and a special character');
+      e.target.reset(); 
       return;
     }
     signIn(email, password)
     .then( ()=>{
       toast('You have successfully logged in')
-      navigate(location?.state ? location.state : "/")
+      setTimeout(function() {
+        navigate(location?.state ? location.state : "/");
+      }, 3000);
       
     }
      
     )
     .catch(error => {
       toast(error.message)
+      
      
     })
+    e.target.reset(); 
+    
   }
   return (
     <div>
@@ -93,11 +104,12 @@ const Login = () => {
                 </Link>
               </p>
             </form>
-            <ToastContainer />
             <button onClick={handleSocialLogin} className="btn btn-outline relative bottom-8 mx-20 text-blue-600">
               Log in with <FaGoogle />
             </button>
           </div>
+          
+          <ToastContainer autoClose={3500} />
         </div>
       </div>
     </div>

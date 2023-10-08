@@ -89,7 +89,6 @@ const GetSupport = () => {
                   </form>
               </div>
           </div>
-          <Footer></Footer>
         </div>
         
     );
