@@ -59,13 +59,13 @@ const Login = () => {
   }
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:w-[1000px] md:w-[500px]">
+      <div className="flex justify-center items-center max-w-[1360px] bg-base-200 py-10">
+        <div className="flex flex-col gap-5 lg:w-[1000px] md:w-[500px] w-[95vw]">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Login now!</h1>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-lg shadow-lg rounded-sm bg-base-100">
-            <form onSubmit={handleLogIn} className="card-body">
+          <div className="max-w-lg shadow-lg rounded-sm bg-base-100 mx-5">
+            <form onSubmit={handleLogIn} className="p-5">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -78,33 +78,31 @@ const Login = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <div className="flex items-center">
-                  <input
+                <input
                     type={showPassword? "text" : "password"}
                     placeholder="password"
                     name="password"
-                    className="input input-bordered relative w-[300px] md:w-[full]"
+                    className="input input-bordered"
                     required
                   />
-                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-12">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
-                </div>
+                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-4 bottom-4">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
               
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
               </div>
-              <p>
+              <p className="text-sm md:text-base text-center my-3">
                 Do not have account? Please{" "}
                 <Link to="/register" className="capitalize btn btn-link p-0">
                   Register
                 </Link>
               </p>
             </form>
-            <button onClick={handleSocialLogin} className="btn btn-outline relative bottom-8 mx-20 text-blue-600">
+            <button onClick={handleSocialLogin} className="capitalize btn btn-outline relative bottom-8 w-1/2 mx-auto text-center text-blue-600 flex">
               Log in with <FaGoogle />
             </button>
           </div>

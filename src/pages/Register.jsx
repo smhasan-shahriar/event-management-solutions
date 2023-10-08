@@ -65,13 +65,13 @@ const Register = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:w-[1000px] md:w-[500px]">
+      <div className=" flex justify-center items-center max-w-[1360px] bg-base-200 py-10">
+        <div className="flex flex-col gap-5 lg:w-[1000px] md:w-[500px] w-[95vw]">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Register now!</h1>
           </div>
-          <div className="card flex-shrink-0 max-w-lg shadow-lg rounded-sm bg-base-100">
-            <form onSubmit={handleSignUp} className="card-body">
+          <div className="max-w-lg shadow-lg rounded-sm bg-base-100 mx-5">
+            <form onSubmit={handleSignUp} className="p-5">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
@@ -108,39 +108,39 @@ const Register = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <div className="flex items-center">
                   <input
                     type={showPassword? "text" : "password"}
                     placeholder="password"
                     name="password"
-                    className="input input-bordered relative w-[280px] md:w-[full]"
+                    className="input input-bordered"
                     required
                   />
-                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-12">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
-                </div>
+                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-4 bottom-4">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
+            
               
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
               </div>
-              <p>
+              <p className="text-sm md:text-base text-center my-3">
                 Already have account? Please
                 <Link to="/login" className="btn btn-link p-0 capitalize">
                   Log In
                 </Link>
               </p>
             </form>
-            <ToastContainer autoClose={3500}/>
-            <button onClick={handleSocialLogin}  className="capitalize btn btn-outline relative bottom-8 mx-20 text-blue-600">
+            <button onClick={handleSocialLogin}  className="capitalize btn btn-outline relative bottom-8 w-1/2 mx-auto text-center text-blue-600 flex">
               Register with <FaGoogle />
             </button>
           </div>
         </div>
       </div>
+      
+      <ToastContainer autoClose={3500}/>
     </div>
   );
 };
