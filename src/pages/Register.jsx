@@ -70,7 +70,7 @@ const Register = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Register now!</h1>
           </div>
-          <div className="card flex-shrink-0 max-w-lg shadow-lg rounded-sm bg-base-100  md:w-full w-[300px]">
+          <div className="card flex-shrink-0 max-w-lg shadow-lg rounded-sm bg-base-100">
             <form onSubmit={handleSignUp} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -117,10 +117,10 @@ const Register = () => {
                     type={showPassword? "text" : "password"}
                     placeholder="password"
                     name="password"
-                    className="input input-bordered flex-1 relative"
+                    className="input input-bordered relative w-[280px] md:w-[full]"
                     required
                   />
-                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-10">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
+                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-12">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
                 </div>
               
               </div>
