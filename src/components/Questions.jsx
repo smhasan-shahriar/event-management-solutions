@@ -1,5 +1,3 @@
-import React from "react";
-
 const Questions = () => {
   return (
     <div data-aos="fade-up" className="max-w-[1360px] mx-2 lg:mx-auto md:mx-4 my-20 bg-red-100 rounded-lg p-10">
