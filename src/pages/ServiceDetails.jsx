@@ -5,6 +5,7 @@ const ServiceDetails = () => {
   const { id } = useParams();
   const services = useLoaderData();
   const service = services.find((service) => service.id == id);
+  window.scrollTo({top: 0})
   return (
     <div className="max-w-[1360px] lg:mx-auto mx-10">
       <div className="relative">

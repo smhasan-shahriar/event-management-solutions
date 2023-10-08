@@ -8,6 +8,14 @@
         "https://i.ibb.co/xzs5nLK/wedding-1.jpg",
         "https://i.ibb.co/L09fRkq/wedding-3.jpg"
       ], 
+      "experience_collection": [
+        {"original": "https://i.ibb.co/RN4Hmwv/wedding-2.jpg"},
+        {"original": "https://i.ibb.co/qW88xBn/wedding-4.jpg"},
+        {"original": "https://i.ibb.co/HHnQ20g/wedding-main.jpg"},
+        {"original": "https://i.ibb.co/ydkB8Cr/wedding-5.jpg"},
+        {"original": "https://i.ibb.co/xzs5nLK/wedding-1.jpg"},
+        {"original": "https://i.ibb.co/L09fRkq/wedding-3.jpg"}
+      ], 
       "price": "$2000",
       "short_description": "Elegant wedding planning and coordination",
       "description": "Our wedding planning services are designed to make your special day stress-free and unforgettable. With over a decade of experience in the industry, we understand that weddings are a once-in-a-lifetime event, and we're dedicated to turning your dreams into reality. From selecting the perfect venue to coordinating every detail, including floral arrangements, catering, and entertainment, we've got you covered. Our team of talented professionals is passionate about creating unique and personalized weddings that reflect your style and personality. We offer customized packages to suit your budget and preferences, ensuring that your wedding day is everything you've ever imagined.",
@@ -25,6 +33,14 @@
         "https://i.ibb.co/gFGP5Xd/birthday-5.jpg",
         "https://i.ibb.co/VD4yPCt/birthday-2.jpg",
         "https://i.ibb.co/hXBmTGt/birthday-3.jpg"
+      ], 
+      "experience_collection": [
+        {"original": "https://i.ibb.co/p0yz3F4/birthday-4.jpg"},
+        {"original": "https://i.ibb.co/4W3QNtp/birthday-1.jpg"},
+        {"original": "https://i.ibb.co/HBwwYY7/birthday-main.jpg"},
+        {"original": "https://i.ibb.co/gFGP5Xd/birthday-5.jpg"},
+        {"original": "https://i.ibb.co/VD4yPCt/birthday-2.jpg"},
+        {"original": "https://i.ibb.co/hXBmTGt/birthday-3.jpg"}
       ], 
       "price": "$500",
       "short_description": "Fun and memorable birthday celebrations",
@@ -44,6 +60,14 @@
         "https://i.ibb.co/Fnc49NJ/fund-1.jpg",
         "https://i.ibb.co/JdZgvY9/fund-2.jpg"
       ], 
+      "experience_collection": [
+        {"original": "https://i.ibb.co/BG40tNW/fund-4.jpg"},
+        {"original": "https://i.ibb.co/j9Kf0S7/fund-3.jpg"},
+        {"original": "https://i.ibb.co/vsCJjWT/fund-main.jpg"},
+        {"original": "https://i.ibb.co/7kdP47B/fund-5.jpg"},
+        {"original": "https://i.ibb.co/Fnc49NJ/fund-1.jpg"},
+        {"original": "https://i.ibb.co/JdZgvY9/fund-2.jpg"}
+      ], 
       "price": "$800",
       "short_description": "Prestigious fundraising events for noble causes",
       "description": "Our Fundraising Gala is an exquisite evening of elegance, purpose, and philanthropy. It's a grand celebration of generosity, where we unite individuals, businesses, and organizations for a noble cause. This prestigious event serves as a powerful platform to raise vital funds in support of meaningful initiatives that make a difference in our world. Picture a lavish cocktail reception, where guests mingle and share their passion for giving back. The gala dinner, a culinary masterpiece, is a feast for the senses. Live entertainment captivates hearts, and impactful presentations shed light on the transformative work being done. Guests, adorned in their finest attire, come not only to enjoy the glamour but also to contribute meaningfully to the cause. As seasoned event organizers, we understand that a Fundraising Gala is more than just an event; it's a catalyst for positive change. We specialize in crafting the perfect atmosphere, engaging donors effectively, and orchestrating successful fundraising activities. Together, we create a legacy of compassion and support that leaves a lasting mark on society. Join us in making the world a better place, one gala at a time.",
@@ -61,6 +85,14 @@
         "https://i.ibb.co/3dvCx0N/engagement-2.jpg",
         "https://i.ibb.co/J76t4Dg/engagement-1.jpg",
         "https://i.ibb.co/9pC4X1z/engagement-5.jpg"
+      ], 
+      "experience_collection": [
+        {"original": "https://i.ibb.co/3dvCx0N/engagement-2.jpg"},
+        {"original": "https://i.ibb.co/6mznpqX/engagement-4.jpg"},
+        {"original": "https://i.ibb.co/YW8MH3G/engagement-main.jpg"},
+        {"original": "https://i.ibb.co/D8Dx26G/engagement-3.jpg"},
+        {"original": "https://i.ibb.co/J76t4Dg/engagement-1.jpg"},
+        {"original": "https://i.ibb.co/9pC4X1z/engagement-5.jpg"}
       ], 
       "price": "$600",
       "short_description": "Create beautiful memories of your engagement",
@@ -80,6 +112,12 @@
         "https://i.ibb.co/BBvYgb2/retirement-1.png",
         "https://i.ibb.co/3NmSwGd/retirement-5.jpg"
       ], 
+      "experience_collection": [
+        {"original": "https://i.ibb.co/zHJKjkW/retirement-main.jpg"},
+        {"original": "https://i.ibb.co/9VFSyby/retirement-2.png"},
+        {"original": "https://i.ibb.co/BBvYgb2/retirement-1.png"},
+        {"original": "https://i.ibb.co/3NmSwGd/retirement-5.jpg"}
+      ], 
       "price": "$400",
       "short_description": "Honor the retiree with a fantastic farewell",
       "description": "Saying goodbye to a colleague or loved one's working years deserves a fantastic farewell, and we specialize in planning retirement parties that honor the retiree's accomplishments. Whether it's a small gathering or a grand celebration, we'll tailor the event to provide a meaningful send-off. With creative ideas for retirement party themes and activities, we ensure that the retiree feels cherished and valued. Our experienced team has organized retirement events of all sizes, and we'll handle every aspect, from venue selection to decoration and entertainment. Let us help you create a memorable retirement party that expresses gratitude and marks the beginning of a new chapter.",
@@ -97,6 +135,14 @@
         "https://i.ibb.co/72bJR0X/baby-shower-1.jpg",
         "https://i.ibb.co/D7b07hD/baby-shower-3.png",
         "https://i.ibb.co/xDkbfht/baby-shower-5.png"
+      ], 
+      "experience_collection": [
+        {"original": "https://i.ibb.co/72bJR0X/baby-shower-1.jpg"},
+        {"original": "https://i.ibb.co/D7b07hD/baby-shower-3.png"},
+        {"original": "https://i.ibb.co/jTK2VLX/baby-shower-main.jpg"},
+        {"original": "https://i.ibb.co/VQNfXVL/baby-shower-2.jpg"},
+        {"original": "https://i.ibb.co/6ZsngS9/baby-shower-4.jpg"},
+        {"original": "https://i.ibb.co/xDkbfht/baby-shower-5.png"}
       ], 
       "price": "$300",
       "short_description": "Adorable baby shower celebrations",

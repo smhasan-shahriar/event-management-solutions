@@ -8,7 +8,6 @@ const OurServices = () => {
         .then(response=> response.json())
         .then(data => setServices(data))
     }, [])
-    console.log(services)
     return (
         <div data-aos="fade-up" className='max-w-[1360px] mx-auto my-10 p-5'>
             <h2 className='font-bold text-5xl text-center my-5'>Our Services</h2>

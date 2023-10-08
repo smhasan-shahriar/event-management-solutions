@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-neutral">
+    <div className="bg-neutral mt-20">
       <footer className="footer items-center md:p-4 p-8 mx-auto max-w-[1360px] text-neutral-content flex flex-col md:flex-row justify-between">
         <aside className="items-center grid-flow-col">
           <img className="w-8" src="https://i.ibb.co/dbh37sJ/party-logo.png" alt="" />

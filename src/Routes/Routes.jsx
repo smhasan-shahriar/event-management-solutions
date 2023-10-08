@@ -32,11 +32,11 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/experiences",
-                element: <Experiences></Experiences>,
+                element: <PrivateRoutes><Experiences></Experiences></PrivateRoutes>,
             },
             {
                 path: "/support",
-                element: <GetSupport></GetSupport>
+                element: <PrivateRoutes><GetSupport></GetSupport></PrivateRoutes> 
             },
             {
                 path: "/login",

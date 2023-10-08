@@ -6,7 +6,7 @@ const Questions = () => {
     <h2 className="text-2xl font-semibold text-center mb-10 ">Frequently Asked Questions</h2>
       <div className="join join-vertical w-full">
         <div className="collapse collapse-arrow join-item border border-red-200">
-          <input type="radio" name="my-accordion-4" checked="checked" />
+          <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-xl font-medium">
           How can I register for an event through the website?
           </div>

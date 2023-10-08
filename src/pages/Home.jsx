@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import BannerIntro from '../components/BannerIntro';
-import Banner from '../components/Banner';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import OurServices from '../components/OurServices';
-import Footer from '../components/Footer';
 import CustomerReview from '../components/CustomerReview';
 import Questions from '../components/Questions';
+import Footer from '../components/Footer';
 
 const Home = () => {
     useEffect(() => {
@@ -25,6 +24,7 @@ const Home = () => {
             <CustomerReview></CustomerReview>
             <Questions></Questions>
             <Footer></Footer>
+          
         </div>
     );
 };
