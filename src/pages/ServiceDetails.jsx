@@ -22,6 +22,10 @@ const ServiceDetails = () => {
         {service.short_description}
       </h4>
       <p>{service.description}</p>
+      
+      <h4 className="text-lg italic font-medium my-5 text-base-500">
+        Price starts from {service.price}. Please take support from us for customization. 
+      </h4>
       <h4 className="text-2xl font-semibold my-5">Our Expertise</h4>
       <div className="grid gap-10 lg:grid-cols-3 my-10 justify-items-center">
         {service.image_url_collection.map((item, idx) => (

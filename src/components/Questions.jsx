@@ -20,7 +20,7 @@ const Questions = () => {
           How do I contact the event organizers if I have questions or issues?
           </div>
           <div className="collapse-content">
-            <p>Get contact information form Contacts page and call our team</p>
+            <p>Get support from our staff form Get Support page. You can also give them a call if you have any questions.</p>
           </div>
         </div>
         <div className="collapse collapse-arrow join-item border border-red-200">

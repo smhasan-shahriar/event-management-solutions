@@ -10,7 +10,7 @@ const Experiences = () => {
         .then(data => setServices(data))
     }, [])
     return (
-        <div>
+        <div className='mb-10'>
             <div>
                 {
                     services.map(service => <ExperienceCard key={service.id} service={service}></ExperienceCard>)

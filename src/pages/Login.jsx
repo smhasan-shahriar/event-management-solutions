@@ -59,9 +59,9 @@ const Login = () => {
   }
   return (
     <div>
-      <div className="flex justify-center items-center max-w-[1360px] bg-base-200 py-10">
-        <div className="flex flex-col gap-5 lg:w-[1000px] md:w-[500px] w-[95vw]">
-          <div className="text-center lg:text-left">
+      <div className="flex h-[86vh]  justify-center items-center bg-base-200 py-10">
+        <div className="flex flex-col gap-5 md:w-[500px] w-[95vw]">
+          <div className="text-center">
             <h1 className="text-5xl font-bold">Login now!</h1>
           </div>
           <div className="max-w-lg shadow-lg rounded-sm bg-base-100 mx-5">
