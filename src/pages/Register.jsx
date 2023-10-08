@@ -70,7 +70,7 @@ const Register = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Register now!</h1>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-lg shadow-lg rounded-sm bg-base-100">
+          <div className="card flex-shrink-0 max-w-lg shadow-lg rounded-sm bg-base-100  md:w-full w-[300px]">
             <form onSubmit={handleSignUp} className="card-body">
               <div className="form-control">
                 <label className="label">
