@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   const { id, name, image_url, price, short_description } = service;
+  const navigate = useNavigate();
+  const handleSeeMore = () => {
+    navigate(`/services/${id}`)
+  }
   return (
     <div>
       <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -17,7 +22,7 @@ const ServiceCard = ({ service }) => {
           <h2 className="card-title">{name}</h2>
           <p>{short_description}</p>
           <div className="card-actions justify-end">
-            <button className="btn bg-red-100 text-black capitalize rounded-sm text-lg">See More</button>
+            <button onClick={handleSeeMore} className="btn bg-red-100 text-black capitalize rounded-sm text-lg">See More</button>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye,FaEyeSlash, FaGoogle  } from "react-icons/fa";
@@ -7,7 +7,9 @@ import useAuthHook from "../hooks/useAuthHook";
 
 const Login = () => {
   const {user, signIn, signInSocial} = useAuthHook();
-  const [showPassword, setShowPassword]= useState(false)
+  const [showPassword, setShowPassword]= useState(false);
+  const location = useLocation();
+  console.log(location)
   const handleSocialLogin = () => {
     signInSocial()
     .then(()=> {
