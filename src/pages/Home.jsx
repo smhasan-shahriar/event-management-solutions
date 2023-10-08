@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import BannerIntro from '../components/BannerIntro';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import OurServices from '../components/OurServices';
 import CustomerReview from '../components/CustomerReview';
 import Questions from '../components/Questions';
-import Footer from '../components/Footer';
 import { ToastContainer } from 'react-toastify';
 
 const Home = () => {

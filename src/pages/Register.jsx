@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useAuthHook from "../hooks/useAuthHook";
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,12 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FaEye,FaEyeSlash, FaGoogle  } from "react-icons/fa";
 
 const Register = () => {
-  const {user, signUp, manageProfile, signInSocial} = useAuthHook();
+  const {signUp, manageProfile, signInSocial} = useAuthHook();
   const navigate = useNavigate()
   const [showPassword, setShowPassword]= useState(false)
   const handleSocialLogin = () => {
     signInSocial()
-    .then((result)=> {
+    .then(()=> {
       toast('You have successfully registered with Google')
         setTimeout(function() {
           navigate(location?.state ? location.state : "/");

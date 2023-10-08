@@ -2,7 +2,7 @@ import React from "react";
 
 const Questions = () => {
   return (
-    <div data-aos="fade-up" className="max-w-[1360px] mx-auto m-20 bg-red-100 rounded-lg p-10">
+    <div data-aos="fade-up" className="max-w-[1360px] mx-2 lg:mx-auto md:mx-4 my-20 bg-red-100 rounded-lg p-10">
     <h2 className="text-2xl font-semibold text-center mb-10 ">Frequently Asked Questions</h2>
       <div className="join join-vertical w-full">
         <div className="collapse collapse-arrow join-item border border-red-200">

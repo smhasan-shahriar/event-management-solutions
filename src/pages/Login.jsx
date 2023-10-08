@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,7 +7,7 @@ import useAuthHook from "../hooks/useAuthHook";
 
 
 const Login = () => {
-  const {user, signIn, signInSocial} = useAuthHook();
+  const {signIn, signInSocial} = useAuthHook();
   const [showPassword, setShowPassword]= useState(false);
   const location = useLocation();
   const navigate = useNavigate();

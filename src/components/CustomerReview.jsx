@@ -2,7 +2,7 @@
 
 const CustomerReview = () => {
   return (
-    <div data-aos="fade-up" className="max-w-[1360px] mx-auto my-20">
+    <div data-aos="fade-up" className="max-w-[1360px]  mx-2 lg:mx-auto md:mx-4  my-20">
         <h2 className="text-2xl font-semibold text-center">Our Delighted Customers</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 my-10 gap-10 justify-items-center">
         <div className="card bg-base-100 shadow-xl">
