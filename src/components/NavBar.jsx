@@ -19,7 +19,7 @@ const NavBar = () => {
     </>
     return (
         <div className=' bg-red-100'>
-            <div className="navbar max-w-[1360px] mx-auto ">
+            <div className="navbar max-w-[1360px] mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const NavBar = () => {
        
       </ul>
     </div>
-    <img className='w-28' src="https://i.ibb.co/hVVJ4jV/event-management-logo.jpg" alt="" />
+    <img className='md:w-28 w-14' src="https://i.ibb.co/hVVJ4jV/event-management-logo.jpg" alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -41,10 +41,11 @@ const NavBar = () => {
       }
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="md:navbar-end">
     {
       user ? <>
           <div className='flex items-center gap-5'>
+            <p className='text-sm md:text-lg'>{user.displayName}</p>
             <img className="w-10 h-10 object-cover rounded-full" src={user.photoURL} />
             <Link onClick={handleLogOut} className="btn capitalize">Log Out</Link>
           </div>

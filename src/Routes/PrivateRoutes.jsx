@@ -5,7 +5,7 @@ import { Navigate, useLocation } from "react-router-dom";
 const PrivateRoutes = ({ children }) => {
   const { user, loading } = useAuthHook();
   const location = useLocation();
-  console.log(location)
+//   console.log(location)
   if (loading) {
     return (
       <div className="w-full h-[80vh] flex justify-center items-center">
@@ -21,7 +21,7 @@ const PrivateRoutes = ({ children }) => {
     
   }
   else{
-    return <Navigate state={location.pathname} to="/login"></Navigate>
+    return <Navigate state={location.pathname} to="/login" replace></Navigate>
   }
   
 };

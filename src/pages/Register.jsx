@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuthHook from "../hooks/useAuthHook";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,11 +7,13 @@ import { FaEye,FaEyeSlash, FaGoogle  } from "react-icons/fa";
 
 const Register = () => {
   const {user, signUp, manageProfile, signInSocial} = useAuthHook();
+  const navigate = useNavigate()
   const [showPassword, setShowPassword]= useState(false)
   const handleSocialLogin = () => {
     signInSocial()
     .then((result)=> {
-      toast('You have successfully logged in')
+      toast('You have successfully logged in');
+      navigate("/")
     })
     .catch(error => {
       toast(error.message)
@@ -38,6 +40,7 @@ const Register = () => {
       manageProfile(name, image_url)
       .then(()=> {
         toast('You have successfully registered with necessary info')
+        navigate("/")
       })
       .catch(error => {
         toast(error.message)

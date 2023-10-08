@@ -2,7 +2,7 @@ import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "react-awesome-slider/src/styles";
 const BannerIntro = () => {
   return (
-    <div className="mx-auto max-w-[1360px] flex items-center justify-center">
+    <div  data-aos="fade-up" className="mx-auto max-w-[1360px] flex items-center justify-center">
       <AwesomeSlider cssModule={AwesomeSliderStyles}>
         <div
           className="hero"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye,FaEyeSlash, FaGoogle  } from "react-icons/fa";
@@ -9,11 +9,12 @@ const Login = () => {
   const {user, signIn, signInSocial} = useAuthHook();
   const [showPassword, setShowPassword]= useState(false);
   const location = useLocation();
-  console.log(location)
+  const navigate = useNavigate();
   const handleSocialLogin = () => {
     signInSocial()
     .then(()=> {
       toast('You have successfully logged in')
+      navigate(location?.state ? location.state : "/")
     })
     .catch(error => {
       toast(error.message)
@@ -35,6 +36,7 @@ const Login = () => {
     signIn(email, password)
     .then( ()=>{
       toast('You have successfully logged in')
+      navigate(location?.state ? location.state : "/")
       
     }
      
