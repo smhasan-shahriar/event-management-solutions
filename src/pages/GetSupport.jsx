@@ -30,7 +30,7 @@ const GetSupport = () => {
                         required
                       />
                     </div>
-                    <div className="flex gap-5">
+                    <div className="flex flex-col md:flex-row gap-5">
                       <div className='w-full flex-1'>
                           <label className="label">
                             <span className="label-text">Phone Number</span>
