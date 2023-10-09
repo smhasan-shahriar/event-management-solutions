@@ -12,10 +12,8 @@ const Register = () => {
   const handleSocialLogin = () => {
     signInSocial()
     .then(()=> {
+      navigate(location?.state ? location.state : "/");
       toast('You have successfully registered with Google')
-        setTimeout(function() {
-          navigate(location?.state ? location.state : "/");
-        }, 3000);
     })
     .catch(error => {
       toast(error.message)
@@ -43,10 +41,8 @@ const Register = () => {
       toast('You have successfully registered')
       manageProfile(name, image_url)
       .then(()=> {
+        navigate(location?.state ? location.state : "/");
         toast('You have successfully registered with necessary info')
-        setTimeout(function() {
-          navigate(location?.state ? location.state : "/");
-        }, 3000);
       })
       .catch(error => {
         toast(error.message)

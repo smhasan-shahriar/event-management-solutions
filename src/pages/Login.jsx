@@ -1,62 +1,52 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { FaEye,FaEyeSlash, FaGoogle  } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import useAuthHook from "../hooks/useAuthHook";
 
-
 const Login = () => {
-  const {signIn, signInSocial} = useAuthHook();
-  const [showPassword, setShowPassword]= useState(false);
+  const { signIn, signInSocial } = useAuthHook();
+  const [showPassword, setShowPassword] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const handleSocialLogin = () => {
     signInSocial()
-    .then(()=> {
-      toast('You have successfully logged in.')
-      setTimeout(function() {
+      .then(() => {
         navigate(location?.state ? location.state : "/");
-      }, 3000);
-      
-    })
-    .catch(error => {
-      toast(error.message)
-    })
-  }
+        toast("You have successfully logged in.");
+      })
+      .catch((error) => {
+        toast(error.message);
+      });
+  };
   const handleLogIn = (e) => {
     e.preventDefault();
-    const form = new FormData(e.currentTarget)
-    const email = form.get('email')
-    const password = form.get('password')
-    if (password.length <6){
-      toast('password must contain at least 6 characters')
-      e.target.reset()
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    if (password.length < 6) {
+      toast("password must contain at least 6 characters");
+      e.target.reset();
       return;
     }
-    if(!(/^(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).+$/).test(password)){
-      toast('Password must contain at least one capital letter and a special character');
-      e.target.reset(); 
+    if (!/^(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).+$/.test(password)) {
+      toast(
+        "Password must contain at least one capital letter and a special character"
+      );
+      e.target.reset();
       return;
     }
     signIn(email, password)
-    .then( ()=>{
-      toast('You have successfully logged in')
-      setTimeout(function() {
+      .then(() => {
         navigate(location?.state ? location.state : "/");
-      }, 3000);
-      
-    }
-     
-    )
-    .catch(error => {
-      toast(error.message)
-      
-     
-    })
-    e.target.reset(); 
-    
-  }
+        toast("You have successfully logged in.");
+      })
+      .catch((error) => {
+        toast(error.message);
+      });
+    e.target.reset();
+  };
   return (
     <div>
       <div className="flex min-h-[86vh]  justify-center items-center bg-base-200 py-10">
@@ -83,14 +73,18 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                    type={showPassword? "text" : "password"}
-                    placeholder="password"
-                    name="password"
-                    className="input input-bordered"
-                    required
-                  />
-                  <span onClick={()=> setShowPassword(!showPassword)} className=" text-pink-400 absolute right-4 bottom-4">{!showPassword?<FaEye/>:<FaEyeSlash/>}</span>
-              
+                  type={showPassword ? "text" : "password"}
+                  placeholder="password"
+                  name="password"
+                  className="input input-bordered"
+                  required
+                />
+                <span
+                  onClick={() => setShowPassword(!showPassword)}
+                  className=" text-pink-400 absolute right-4 bottom-4"
+                >
+                  {!showPassword ? <FaEye /> : <FaEyeSlash />}
+                </span>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
@@ -102,12 +96,15 @@ const Login = () => {
                 </Link>
               </p>
             </form>
-            <button onClick={handleSocialLogin} className="capitalize btn btn-outline relative bottom-8 w-1/2 mx-auto text-center text-blue-600 flex">
+            <button
+              onClick={handleSocialLogin}
+              className="capitalize btn btn-outline relative bottom-8 w-1/2 mx-auto text-center text-blue-600 flex"
+            >
               Log in with <FaGoogle />
             </button>
           </div>
-          
-          <ToastContainer autoClose={3500} />
+
+          <ToastContainer autoClose={5000} />
         </div>
       </div>
     </div>
