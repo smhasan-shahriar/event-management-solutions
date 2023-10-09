@@ -36,11 +36,10 @@ const Register = () => {
     }
     signUp(email, password)
     .then( ()=>{
-      toast('You have successfully registered')
       manageProfile(name, image_url)
       .then(()=> {
         navigate(location?.state ? location.state : "/");
-        toast('You have successfully registered with necessary info')
+        toast('You have successfully registered')
       })
       .catch(error => {
         toast(error.message)
