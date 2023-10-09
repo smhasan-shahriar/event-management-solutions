@@ -136,7 +136,7 @@ const Register = () => {
         </div>
       </div>
       
-      <ToastContainer autoClose={3500}/>
+      <ToastContainer/>
     </div>
   );
 };
