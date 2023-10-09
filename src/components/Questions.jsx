@@ -18,7 +18,7 @@ const Questions = () => {
           How do I contact the event organizers if I have questions or issues?
           </div>
           <div className="collapse-content">
-            <p>Get support from our staff form Get Support page. You can also give us a call on +881234-5678 if you have any questions.</p>
+            <p>Get support from our staff form Get Support page after logging in. You can also give us a call on +881234-5678 if you have any questions.</p>
           </div>
         </div>
         <div className="collapse collapse-arrow join-item border border-red-200">
