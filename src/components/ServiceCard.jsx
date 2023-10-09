@@ -16,7 +16,7 @@ const ServiceCard = ({ service }) => {
             src={image_url}
             alt="Album"
           />
-          <p className="z-50 bg-[#00000050] text-2xl font-semibold text-center py-2 w-full h-[50px] text-red-200 absolute bottom-1">Price: {price}</p>
+          <p className="z-50 bg-[#00000050] text-2xl font-semibold text-center py-2 w-full h-[50px] text-red-200 absolute bottom-0">Price: {price}</p>
         </figure>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
