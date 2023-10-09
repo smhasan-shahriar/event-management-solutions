@@ -25,18 +25,6 @@ const Login = () => {
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-    if (password.length < 6) {
-      toast("password must contain at least 6 characters");
-      e.target.reset();
-      return;
-    }
-    if (!/^(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).+$/.test(password)) {
-      toast(
-        "Password must contain at least one capital letter and a special character"
-      );
-      e.target.reset();
-      return;
-    }
     signIn(email, password)
       .then(() => {
         navigate(location?.state ? location.state : "/");
