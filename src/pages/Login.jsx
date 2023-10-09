@@ -59,7 +59,7 @@ const Login = () => {
   }
   return (
     <div>
-      <div className="flex h-[86vh]  justify-center items-center bg-base-200 py-10">
+      <div className="flex min-h-[86vh]  justify-center items-center bg-base-200 py-10">
         <div className="flex flex-col gap-5 md:w-[500px] w-[95vw]">
           <div className="text-center">
             <h1 className="text-5xl font-bold">Login now!</h1>

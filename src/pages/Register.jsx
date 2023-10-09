@@ -65,7 +65,7 @@ const Register = () => {
 
   return (
     <div>
-      <div className="flex h-[86vh] justify-center items-center bg-base-200 py-10">
+      <div className="flex min-h-[86vh] justify-center items-center bg-base-200 py-10">
         <div className="flex flex-col gap-5 md:w-[500px] w-[95vw]">
           <div className="text-center">
             <h1 className="text-5xl font-bold">Register now!</h1>
@@ -127,7 +127,7 @@ const Register = () => {
                 <button className="btn btn-primary">Register</button>
               </div>
               <p className="text-sm md:text-base text-center my-3">
-                Already have account? Please
+                Already have account? Please{" "}
                 <Link to="/login" className="btn btn-link p-0 capitalize">
                   Log In
                 </Link>
